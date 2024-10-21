@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ADMIN</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+        <!-- MAIN -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- HEADER -->
+                <header id="header">
+                    <span class="name">홍길동 (ID/FULLNAME) 님</span>
+                </header>
+
+                <!-- FIXED INFO -->
+                <section class="alert">
+                    <ul class="list">
+                        <li class="fa-user-plus">
+                            신규회원수
+                            <span class="value">10,000</span>
+                        </li>
+                        <li class="fa-users">
+                            총 회원수
+                            <span class="value">1,000,000</span>
+                        </li>
+                        <li class="fa-ban">
+                            미확인 실명 확인건수
+                            <span class="value">0</span>
+                        </li>
+                        <li class="fa-filter">
+                            AML 필터링 건수
+                            <span class="value">100</span>
+                        </li>
+                        <li class="fa-exclamation-triangle">
+                            AML 경고
+                            <span class="value">854</span>
+                        </li>
+                        <li class="fa-line-chart">
+                            거래건수
+                            <span class="value">45312</span>
+                        </li>
+                        <li class="fa-krw">
+                            거래금액
+                            <span class="value">100,000,000</span>
+                        </li>
+                        <li class="fa-credit-card">
+                            계좌잔액정보
+                            <span class="value">100,000</span>
+                        </li>
+                        <li class="fa-balance-scale">
+                            법정보고진행상황표시
+                            <span class="value">???</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- CONTAINER -->
+                <section id="wrap">
+
+                    <!-- 기본정보 CAPTION -->
+                    <div class="commonBox">
+                        <div class="commonBoxCaption">
+                            기본정보
+                            <div class="inlineAlignRight">
+                                <button class="greenButton">변경내역</button>
+                            </div>
+                        </div>
+
+                        <!-- 기본정보 TABLE -->
+                        <table width="100%" border="0" class="rowList">
+                            <tr>
+                                <td>상태</td>
+                                <td colspan="5">정상 / 인증횟수 초과</td>
+                                <td><button class="grayButton">인증횟수 초기화</button></td>
+                            </tr>
+                            <tr>
+                                <td>회원번호</td>
+                                <td colspan="5">12345689</td>
+                                <td><button class="grayButton">블랙리스트 등록 / 해제</button></td>
+                            </tr>
+                            <tr>
+                                <td class="separate">아이디</td>
+                                <td>01012345678</td>
+                                <td><button class="grayButton">이메일로 아이디 변경</button></td>
+                                <td class="separate">국적</td>
+                                <td colspan="3">대한민국</td>
+                            </tr>
+                            <tr>
+                                <td>영문성명</td>
+                                <td><span class="bold">(성)</span>Jeon</td>
+                                <td><span class="bold">(이름)</span>jeyoung</td>
+                                <td class="separate">국문성명</td>
+                                <td><span class="bold">(성)</span>전</td>
+                                <td colspan="2"><span class="bold">(이름)</span>제영</td>
+                            </tr>
+                            <tr>
+                                <td>생년월일</td>
+                                <td colspan="2">1979년 11월 21일</td>
+                                <td class="separate">성별</td>
+                                <td colspan="3">남성</td>
+                            </tr>
+                            <tr>
+                                <td>주소</td>
+                                <td colspan="6"><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>상세주소</td>
+                                <td colspan="6"><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>직업</td>
+                                <td colspan="2">
+                                    <div class="selectWrapper">
+                                        <select>
+                                            <option>회사원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="separate">언어</td>
+                                <td colspan="3">
+                                    <div class="selectWrapper">
+                                        <select>
+                                            <option>한국어</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>송금목적</td>
+                                <td colspan="2">
+                                    <div class="selectWrapper">
+                                        <select>
+                                            <option>여행경비</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="separate">자금출처</td>
+                                <td colspan="3">
+                                    <div class="selectWrapper">
+                                        <select>
+                                            <option>월급여</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>통지</td>
+                                <td><span class="bold">휴대폰</span>
+                                    <div class="toggleBox">
+                                        <input id="onOff" type="checkbox" class="toggleCheckbox">
+                                        <label for="onOff"><span class="toggle"></span></label>
+                                    </div>
+                                </td>
+                                <td><span class="bold">이메일</span>
+                                    <div class="toggleBox">
+                                        <input id="onOff" type="checkbox" class="toggleCheckbox" checked="">
+                                        <label for="onOff"><span class="toggle"></span></label>
+                                    </div>
+                                </td>
+                                <td><span class="bold">푸시</span>
+                                    <div class="toggleBox">
+                                        <input id="onOff" type="checkbox" class="toggleCheckbox" checked="">
+                                        <label for="onOff"><span class="toggle"></span></label>
+                                    </div>
+                                </td>
+                                <td colspan="3"><button class="grayButton">메시지 발송</button></td>
+                            </tr>
+                            <tr>
+                                <td>가입일</td>
+                                <td colspan="2">20180601 23:12:12</td>
+                                <td class="separate">가입매체</td>
+                                <td colspan="3">안드로이드</td>
+                            </tr>
+                            <tr>
+                                <td>최근접속일</td>
+                                <td colspan="2">20180601 23:12:12</td>
+                                <td class="separate">접속IP</td>
+                                <td colspan="3">192,123,123,123</td>
+                            </tr>
+                            <tr>
+                                <td>추천인코드</td>
+                                <td colspan="2">111111</td>
+                                <td class="separate">대리점</td>
+                                <td colspan="3">AAA사</td>
+                            </tr>
+                        </table>
+
+                        <!-- 기본정보 수정 BUTTON -->
+                        <div class="alignRight">
+                            <button class="blueButton">수정</button>
+                        </div>
+                    </div>
+
+                    <!-- 인증상태 CAPTION -->
+                    <div class="commonBox">
+                        <div class="commonBoxCaption">
+                            인증상태
+                            <div class="inlineAlignRight">
+                                <button class="greenButton">인증이력 확인</button>
+                            </div>
+                        </div>
+
+                        <!-- 인증상태 TABLE -->
+                        <table width="100%" border="0" class="rowList">
+                            <tr>
+                                <td>휴대폰</td>
+                                <td>01012345678</td>
+                                <td class="separate">일시</td>
+                                <td>20180620 23:10:10</td>
+                                <td><button class="grayButton">인증번호 발송</button></td>
+                            </tr>
+                            <tr>
+                                <td>이메일</td>
+                                <td>junjae79@gmail.com</td>
+                                <td class="separate">일시</td>
+                                <td>20180620 10:51:12</td>
+                                <td><button class="grayButton">인증번호 발송</button></td>
+                            </tr>
+                            <tr>
+                                <td>신분증</td>
+                                <td><button class="grayButton" onclick="openModal()">신분증 검증</button>
+                                    <!--button class="grayButton">운전면허증</button-->
+                                </td>
+
+                                <td class="separate">일시</td>
+                                <td>20180620 14:12:34</td>
+                                <td><button class="grayButton">신분증확인</button>
+                                    <!--button class="grayButton">신분증갱신</button-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>계좌번호</td>
+                                <td>우리은행 1000213545513541</td>
+                                <td class="separate">일시</td>
+                                <td>20180621 05:15:13</td>
+                                <td><button class="grayButton">등록계좌 삭제</button></td>
+                            </tr>
+                        </table>
+                        <!-- END // 인증상태 TABLE -->
+                    </div>
+
+                    <!-- 회원AML CAPTION -->
+                    <div class="commonBox">
+                        <div class="commonBoxCaption">
+                            회원 AML
+                            <div class="inlineAlignRight">
+                                <button class="greenButton">검증내역</button>
+                            </div>
+                        </div>
+
+                        <!-- 회원AML TABLE -->
+                        <table width="100%" border="0" class="rowList">
+                            <tr>
+                                <td>상태</td>
+                                <td><span class="amlStateW">W</span>
+                                    <span class="amlStateC1">C1</span>
+                                    <span class="amlStateC2">C2</span></td>
+                                <td class="separate">사유</td>
+                                <td>금융거래 제한 대상자</td>
+                                <td class="separate">최종 검증일</td>
+                                <td>20180621 13:10:10</td>
+                            </tr>
+                            <tr>
+                                <td class="noneSparate" colspan="2"><button class="grayButton">관리자 업데이트</button></td>
+                                <td class="separate">처리</td>
+                                <td>상태확정</td>
+                                <td class="separate">업데이트</td>
+                                <td>20180621 12:12:15</td>
+                            </tr>
+                        </table>
+                        <!-- END // 회원AML -->
+                    </div>
+
+                    <!-- 송금정보 CAPTION -->
+                    <div class="commonBox">
+                        <div class="commonBoxCaption">
+                            송금정보
+                            <div class="inlineAlignRight">
+                                2018년 1월 1일부터 ~
+                            </div>
+                        </div>
+
+                        <!-- 송금정보 TABLE -->
+                        <!-- OUTBOUND -->
+                        <table width="100%" border="0" class="rowList">
+                            <tr>
+                                <td colspan="8">Outbound</td>
+                            </tr>
+                            <tr>
+                                <td class="separate">송금액</td>
+                                <td>USD</td>
+                                <td colspan="2">10,000</td>
+                                <td class="separate">잔여한도</td>
+                                <td>USD</td>
+                                <td colspan="2">10,000</td>
+                            </tr>
+                            <tr>
+                                <td>완료</td>
+                                <td>10건</td>
+                                <td class="separate">진행중</td>
+                                <td>0건</td>
+                                <td class="separate">보류</td>
+                                <td>0건</td>
+                                <td class="separate">취소</td>
+                                <td>0건</td>
+                            </tr>
+                        </table>
+                        <!-- INBOUND -->
+                        <table width="100%" border="0" class="rowList">
+                            <tr>
+                                <td colspan="8">Inbound</td>
+                            </tr>
+                            <tr>
+                                <td class="separate">송금액</td>
+                                <td>USD</td>
+                                <td colspan="2">10,000</td>
+                                <td class="separate">잔여한도</td>
+                                <td>USD</td>
+                                <td colspan="2">10,000</td>
+                            </tr>
+                            <tr>
+                                <td>완료</td>
+                                <td>10건</td>
+                                <td class="separate">진행중</td>
+                                <td>0건</td>
+                                <td class="separate">보류</td>
+                                <td>0건</td>
+                                <td class="separate">취소</td>
+                                <td>0건</td>
+                            </tr>
+                        </table>
+                        <!-- END // 송금정보 TABLE -->
+                        <div class="alignRight">
+                            <button class="grayButton">변경이력</button>
+                            <button class="grayButton" onclick="javascript:openModal();">송금 리스트 관리</button>
+                            <button class="grayButton">상세내역 확인</button>
+                        </div>
+
+                        <!-- 송금 리스트 관리 MODAL -->
+                        <div id="" class="modalOverlay">
+                            <div class="modalContents largeModal">
+                                <div class="modalBody">
+                                    <div class="modalClose">×</div>
+
+                                    <!-- 송금 리스트 관리 TITLE -->
+                                    <div class="title">
+                                        송금 리스트 관리
+                                    </div>
+                                    
+                                        <!-- 송금 리스트 관리 TABS -->
+                                        <div class="tabs">
+                                            <ul class="tabsNav">
+                                                <li><a href="#out">아웃바운드 (Outbound)</a></li>
+                                                <li><a href="#in">인바운드 (Inbound)</a></li>
+                                                <li class="button">등록</li>
+                                            </ul>
+
+                                            <!-- 아웃 바운드 -->
+                                            <div id="out" class="tabContent">
+                                                
+                                                <div class="content">
+                                                <!-- 아웃 바운드 TABLE -->
+                                                <table width="100%" border="0" class="column">
+                                                    <tr>
+                                                        <td>별명</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>국가</td>
+                                                        <td colspan="2">
+                                                            <div class="selectWrapper">
+                                                                <select>
+                                                                        <option>일본</option>
+                                                                        <option>필리핀</option>
+                                                                    </select>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>예금주명</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>은행명</td>
+                                                        <td colspan="2">
+                                                            <div class="selectWrapper">
+                                                                <select>
+                                                                        <option>일본은행</option>
+                                                                        <option>도이치은행</option>
+                                                                    </select>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>은행코드</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>계좌번호</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>계좌종류</td>
+                                                        <td>
+                                                            <input id="t1" type="radio">
+                                                            <label for="t1">보통계좌</label>
+                                                        </td>
+                                                        <td>
+                                                            <input id="t1" type="radio">
+                                                            <label for="t1">당좌계좌</label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>받는분 전화번호</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>받는분 이메일</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>받는분 우편번호</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>받는분 주소</td>
+                                                        <td colspan="2"><input type="text" /></td>
+                                                    </tr>
+                                                </table>
+                                                <!-- END // 아웃 바운드 TABLE -->
+                                                </div>
+                                                
+                                                <!-- 아웃 바운드 BUTTON -->
+                                                <div class="alignCenter marginBottom">
+                                        <button class="blueButton">확인</button>
+                                        <button class="lightGrayButton">취소</button>
+                                    </div>
+                                                
+                                            </div>
+                                            <!-- 인 바운드 -->
+                                            <div id="in" class="tabContent">
+                                                <div class="content">
+                                                    
+                                                <!-- 인 바운드 BUTTON -->
+                                                <div class="alignLeft paddingBottom">
+                                                    <button class="blueButton">전체선택</button>
+                                                    <button class="blueButton">전체삭제</button>
+                                                </div>
+                                                    
+                                                <!-- 인 바운드 TABLE -->
+                                                <table width="100%" border="0" class="columnList">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>선택</th>
+                                                            <th>별명</th>
+                                                            <th>국가</th>
+                                                            <th>보내는 사람</th>
+                                                            <th>연락처</th>
+                                                            <th>은행</th>
+                                                            <th>변경</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>
+                                                            <input id="num0" type="checkbox">
+                                                            <label for="num0"></label>
+                                                        </td>
+                                                        <td>필리핀 1</td>
+                                                        <td>필리핀</td>
+                                                        <td>사람1</td>
+                                                        <td>+81 12345678</td>
+                                                        <td>필리핀은행</td>
+                                                        <td>
+                                                            <button class="grayButton small">수정</button>
+                                                            <button class="grayButton small">삭제</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                </div>
+                                                <!-- END // 인 바운드 TABLE -->                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- END // 송금 리스트 TABS -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END // 송금 리스트 관리 MODAL -->
+                    
+                    <!-- 신분증 검증 MODAL -->
+                        <div id="" class="modalOverlay">
+                            <div class="modalContents largeModal">
+                                <div class="modalBody">
+                                    <div class="modalClose">×</div>
+
+                                    <!-- 신분증 검증 CONTENTS -->
+                                    <div class="title">
+                                        신분증검증
+                                    </div>
+
+                                    <div class="content">
+                                        <!-- 이미지 업로드 버튼 -->
+                                        <div class="imgUpload">
+                                            <input type="file" id="f1">
+                                            <label for="f1"></label>
+                                        </div>
+                                        <!-- 이미지가 있을 시에는 'onMost' 클래스 추가해주세요
+                                             이미지가 없을 시에는 'onMost' 클래스를 제거해주세요 -->
+                                        <div class="imgBox">
+                                            <img src="images/test.jpg" alt="이미지없음" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 신분증 검증 SELECT TABLE -->
+
+                                    <table width="100%" border="0" class="column">
+                                        <tr>
+                                            <td>결과</td>
+                                            <td colspan="3">
+                                                <div class="selectWrapper">
+                                                    <select>
+                                                        <option>정상</option>
+                                                        <option>확인불가</option>
+                                                        <option>분실</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>구분</td>
+                                            <td class="alignLeft">
+                                                <input id="two" type="radio">
+                                                <label for="two">주민등록증</label>
+                                            </td>
+                                            <td class="alignLeft">
+                                                <input id="two" type="radio">
+                                                <label for="two">운전면허증</label>
+                                            </td>
+                                            <td class="alignLeft">
+                                                <input id="two" type="radio">
+                                                <label for="two">외국인등록증</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>주소</td>
+                                            <td colspan="3"><input type="text" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>상세 주소</td>
+                                            <td colspan="3"><input type="text" /></td>
+                                        </tr>
+                                    </table>
+                                    <!-- END // 신분증 검증 SELECT TABLE -->
+
+                                    <div class="alignCenter marginBottom">
+                                        <button class="blueButton">업데이트</button>
+                                        <button class="lightGrayButton">취소</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END // 신분증 검증 MODAL -->
+                </section>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+
+            <header class="name">
+                admin
+            </header>
+
+            <div class="inner">
+
+                <!-- MENU -->
+                <nav id="menu">
+                    <ul>
+                        <li class="dashBoard">대시보드</li>
+                        <li class="open chevron">고객계정관리
+                            <ul class="subMenu">
+                                <li class="active">회원조회</li>
+                                <li>신규회원등록</li>
+                                <li>거래내역조회
+                                    <!-- SUB IN SUBMENU -->
+                                    <ul class="subMenu">
+                                        <li>서브메뉴 1</li>
+                                        <li>서브메뉴 2</li>
+                                        <li>서브메뉴 3</li>
+                                    </ul>
+                                    <!-- END // SUB IN SUBMENU -->
+                                </li>
+                                <li>결제관리</li>
+                            </ul>
+                        </li>
+                        <li>자금세탁방지</li>
+                        <li class="chevron">상품정보관리
+                            <ul class="subMenu">
+                                <li>환율관리</li>
+                                <li>송금국가상품설정</li>
+                                <li>해외파트너정보관리</li>
+                            </ul>
+                        </li>
+                        <li class="chevron">대리점 관리
+                            <ul class="subMenu">
+                                <li>국내대리점관리</li>
+                                <li>대리점네트워크정보관리</li>
+                            </ul>
+                        </li>
+                        <li>사용자 관리</li>
+                        <li class="chevron">정산 관리
+                            <ul class="subMenu">
+                                <li>인바운드정산</li>
+                                <li>아웃바운드정산</li>
+                            </ul>
+                        </li>
+                        <li>실적 관리</li>
+                        <li class="chevron">운영 및 자금관리
+                            <ul class="subMenu">
+                                <li>이행보증금관리</li>
+                                <li>국내외화표시자금관리<br/> (Inbound 거래결제자금)</li>
+                                <li>국내원화표시자금관리<br/> (Inbound 거래결제자금)</li>
+                                <li>해외자금관리<br/> (Outbound 거래결제자금)</li>
+                            </ul>
+                        </li>
+                        <li class="chevron">알림 관리
+                            <ul class="subMenu">
+                                <li>공지게시판</li>
+                                <li>FAQ</li>
+                                <li>Push (조회/등록)</li>
+                            </ul>
+                        </li>
+                        <li class="chevron">보고 관리
+                            <ul class="subMenu">
+                                <li>이행보증금 보고서작성</li>
+                                <li>외환전산망 미보고리스트</li>
+                                <li>금융정보분석원 보고서생성</li>
+                                <li>전신송금 정보제공</li>
+                                <li>회계보고용 자료조회및생성</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- INFO -->
+                <div class="align-center">
+                    <button class="signoutButton yellowButton">로그아웃</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ADMIN</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+        <!-- MAIN -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- HEADER -->
+                <header id="header">
+                    <span class="name">홍길동 (ID/FULLNAME) 님</span>
+                </header>
+
+                <!-- FIXED INFO -->
+                <section class="alert">
+                    <ul class="list">
+                        <li class="fa-user-plus">
+                            신규회원수
+                            <span class="value">10,000</span>
+                        </li>
+                        <li class="fa-users">
+                            총 회원수
+                            <span class="value">1,000,000</span>
+                        </li>
+                        <li class="fa-ban">
+                            미확인 실명 확인건수
+                            <span class="value">0</span>
+                        </li>
+                        <li class="fa-filter">
+                            AML 필터링 건수
+                            <span class="value">100</span>
+                        </li>
+                        <li class="fa-exclamation-triangle">
+                            AML 경고
+                            <span class="value">854</span>
+                        </li>
+                        <li class="fa-line-chart">
+                            거래건수
+                            <span class="value">45312</span>
+                        </li>
+                        <li class="fa-krw">
+                            거래금액
+                            <span class="value">100,000,000</span>
+                        </li>
+                        <li class="fa-credit-card">
+                            계좌잔액정보
+                            <span class="value">100,000</span>
+                        </li>
+                        <li class="fa-balance-scale">
+                            법정보고진행상황표시
+                            <span class="value">???</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 2018-07-10 추가작업 -->
+                <!-- CONTAINER -->
+                <section id="wrap">
+
+                    <div class="commonBox">
+                        <!-- 환율관리 CAPTION -->
+                        <div class="commonBoxCaption">환율관리</div>
+
+                        <!-- 환율관리 TABLE -->
+                        <table width="100%" border="0" class="columnList">
+                            <thead>
+                                <tr>
+                                    <th>국가</th>
+                                    <th>구분</th>
+                                    <th>결제통화</th>
+                                    <th>환율</th>
+                                    <th>송금통화</th>
+                                    <th>환율</th>
+                                    <th>지불통화</th>
+                                    <th>최종환율</th>
+                                    <th>변경일시</th>
+                                    <th>회차</th>
+                                    <th>작업자</th>
+                                </tr>
+                            </thead>
+                            <!-- LIST -->
+                            <tr>
+                                <td>필리핀</td>
+                                <td>Out</td>
+                                <td>KRW</td>
+                                <td>1070.15</td>
+                                <td>USD</td>
+                                <td>53.4334</td>
+                                <td>PHP</td>
+                                <td class="textRed">0.04993076</td>
+                                <td>20180612 11:10:00</td>
+                                <td class="textBlue">2</td>
+                                <td>관리자 1</td>
+                            </tr>
+                            <tr>
+                                <td>필리핀</td>
+                                <td>Out</td>
+                                <td>KRW</td>
+                                <td>1070.15</td>
+                                <td>USD</td>
+                                <td>53.4334</td>
+                                <td>PHP</td>
+                                <td class="textRed">0.04993076</td>
+                                <td>20180612 11:10:00</td>
+                                <td class="textBlue">2</td>
+                                <td>관리자 1</td>
+                            </tr>
+
+                        </table>
+                        <!-- END // 환율관리 TABLE -->
+
+                        <!-- 버튼 GROUP -->
+                        <div class="alignRight h90">
+                            <button class="greenButton">적용 통화변경</button>
+                            <button class="greenButton">기준 환율변경</button>
+                        </div>
+
+                        <!-- 기준 환율변경 MODAL -->
+                        <div id="" class="modalOverlay modalShow">
+                            <div class="modalContents largeModal">
+                                <div class="modalBody">
+                                    <div class="modalClose">×</div>
+
+                                    <!-- 기준 환율변경 CONTENTS -->
+                                    <div class="title">
+                                        기준 환율변경 (2018 0618 09:00 현재)
+                                    </div>
+
+                                    <div class="content">
+                                        <!-- 기준 환율변경 TABLE -->
+                                        <table width="100%" border="0" class="columnList">
+                                            <thead>
+                                                <tr>
+                                                    <th>기준통화</th>
+                                                    <th>대응통화</th>
+                                                    <th>BUY</th>
+                                                    <th>기준환율</th>
+                                                    <th>SELL</th>
+                                                    <th>직전변경일시</th>
+                                                    <th>변동여부</th>
+                                                </tr>
+                                            </thead>
+                                            <!-- LIST -->
+                                            <tr>
+                                                <td>USD</td>
+                                                <td>KRW</td>
+                                                <td><input type="text" /></td>
+                                                <td>1060.28</td>
+                                                <td><input type="text" /></td>
+                                                <td>20180612 11:10:00</td>
+                                                <td>
+                                                    <span class="bgGray">동일</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>JPY</td>
+                                                <td>KRW</td>
+                                                <td><input type="text" /></td>
+                                                <td>9.6503</td>
+                                                <td><input type="text" /></td>
+                                                <td>20180612 11:10:00</td>
+                                                <td>
+                                                    <span class="bgRed">상이</span>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                        <!-- END // 적용 통화변경 TABLE -->
+                                    </div>
+                                    <!-- END // 적용 통화변경 CONTENTS -->
+
+                                    <!-- 관리자 비밀번호 입력 & 취소/변경 버튼 -->
+                                    <div class="w50p inlineAlignRight">
+                                        <span class="boldText marginRight">* 관리자 비밀번호</span>
+                                        <input type="password" class="w200 marginRight" />
+
+                                        <!-- 버튼 GROUP -->
+                                        <div>
+                                            <button class="lightGrayButton">취소</button>
+                                            <button class="blueButton">변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END // 적용 통화변경 MODAL -->
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+
+            <header class="name">
+                admin
+            </header>
+
+            <div class="inner">
+
+                <!-- MENU -->
+                <nav id="menu">
+                    <ul>
+                        <li class="dashBoard">대시보드</li>
+                        <li class="open chevron">고객계정관리
+                            <ul class="subMenu">
+                                <li class="active">회원조회</li>
+                                <li>신규회원등록</li>
+                                <li>거래내역조회
+                                    <!-- SUB IN SUBMENU -->
+                                    <ul class="subMenu">
+                                        <li>서브메뉴 1</li>
+                                        <li>서브메뉴 2</li>
+                                        <li>서브메뉴 3</li>
+                                    </ul>
+                                    <!-- END // SUB IN SUBMENU -->
+                                </li>
+                                <li>결제관리</li>
+                            </ul>
+                        </li>
+                        <li>자금세탁방지</li>
+                        <li class="chevron">상품정보관리
+                            <ul class="subMenu">
+                                <li>환율관리</li>
+                                <li>송금국가상품설정</li>
+                                <li>해외파트너정보관리</li>
+                            </ul>
+                        </li>
+                        <li class="chevron">대리점 관리
+                            <ul class="subMenu">
+                                <li>국내대리점관리</li>
+                                <li>대리점네트워크정보관리</li>
+                            </ul>
+                        </li>
+                        <li>사용자 관리</li>
+                        <li class="chevron">정산 관리
+                            <ul class="subMenu">
+                                <li>인바운드정산</li>
+                                <li>아웃바운드정산</li>
+                            </ul>
+                        </li>
+                        <li>실적 관리</li>
+                        <li class="chevron">운영 및 자금관리
+                            <ul class="subMenu">
+                                <li>이행보증금관리</li>
+                                <li>국내외화표시자금관리<br/> (Inbound 거래결제자금)</li>
+                                <li>국내원화표시자금관리<br/> (Inbound 거래결제자금)</li>
+                                <li>해외자금관리<br/> (Outbound 거래결제자금)</li>
+                            </ul>
+                        </li>
+                        <li class="chevron">알림 관리
+                            <ul class="subMenu">
+                                <li>공지게시판</li>
+                                <li>FAQ</li>
+                                <li>Push (조회/등록)</li>
+                            </ul>
+                        </li>
+                        <li class="chevron">보고 관리
+                            <ul class="subMenu">
+                                <li>이행보증금 보고서작성</li>
+                                <li>외환전산망 미보고리스트</li>
+                                <li>금융정보분석원 보고서생성</li>
+                                <li>전신송금 정보제공</li>
+                                <li>회계보고용 자료조회및생성</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- INFO -->
+                <div class="align-center">
+                    <button class="signoutButton yellowButton">로그아웃</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+</body>
+
+</html>
